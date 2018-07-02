@@ -6,5 +6,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def ping():
-  return json.dumps({'pong':time.time()})
+  return json.dumps({'pong':int(time.time())})
 
